@@ -18,7 +18,7 @@ ask you not to share the dataset. See more about the problem in
     
 1. [Model Analyses](#Model-Analyses)
 1. [Visualizations](#Visualizations)
-    1. [Slide Deck](https://docs.google.com/presentation/d/1iIjkURRV3yMbMUNnj3k_r3jpHNOrMHAOR2SaIU2j2O8/edit?usp=sharing)
+    1. [Slide Deck](https://docs.google.com/presentation/d/1IN5UFuAzI6oDC38MMX2rFdKyShlF5065ZbD-_D--Lm4/edit#slide=id.p5)
 
 # Team SAIL
 
@@ -59,18 +59,50 @@ when there is NO rating by the driver, there is 10% attention (of ~6,000) of app
 2. Cleaning 
 3. Dropping columns of irrelevance ??
 
+churn.corr
+- luxury car users are more likely, 
 
 [Insert scatter matrix plot here]
 
+
+
 ## Discovery
 
-Notable features were:
+Conducting Feature importance:
+
+
+Using pd.corr():
+PHONE type to geographic location has impacts
 
 
 # Model Analyses
 
+Baseline model has:
+print(np.mean(scores['test_acc']))
+
+​
+
+print(np.mean(scores['test_prec']))  
+
+​
+
+print(np.mean(scores['test_rec']))  
+
+0.7571500000000001
+0.6819445955994825
+0.6633189295168529
+
+Baseline Model Feature importance:
+
+Feature #0: avg_dist, Score: 0.29977796903502507
+Feature #1: avg_rating_by_driver, Score: 0.10940844267320009
+Feature #2: avg_rating_of_driver, Score: 0.07047895716175374
+Feature #3: avg_surge, Score: 0.06927725857030959
+Feature #4: surge_pct, Score: 0.08292960227797312
+Feature #5: trips_in_first_30_days, Score: 0.08013858160502824
+Feature #6: luxury_car_user, Score: 0.03182962055024575
 ## Findings
 
 # Visualizations
-1. [Slide Deck](https://docs.google.com/presentation/d/1iIjkURRV3yMbMUNnj3k_r3jpHNOrMHAOR2SaIU2j2O8/edit?usp=sharing)
+1. [Slide Deck](https://docs.google.com/presentation/d/1IN5UFuAzI6oDC38MMX2rFdKyShlF5065ZbD-_D--Lm4/edit#slide=id.p5)
 
